@@ -59,7 +59,7 @@ and the future of vehicle automation.
 \section{Introduction}
 The already crowded race to put autonomous vehicles on the road may happen 
 quicker than we thought. Mercedes-Benz's parent company just announced in April 
-2017 \cite{mercedes} that they are planning to release driver-free taxi service in as little as 
+2017 that they are planning to release driver-free taxi service in as little as 
 three years. Other companies are planning to also release self 
 driving cars in the next five years. Google, Tesla and Uber have been working on 
 the technology for many years. These companies will encounter a lot of 
@@ -85,6 +85,34 @@ look on the current situation and the future of car automation.
 Autonomous vehicle, AVs, also known as self-driving car, or a robot car, is a 
 vehicle which operates and drives solely on computer algorithm. There is no need 
 for human interaction and the vehicle can operate from point A to B harmless. 
+
+Autonomous vehicles can be compartmentalized in five levels \cite{transportpolicy} where first level of self 
+driving vehicle is automating single functions. This includes devices such as 
+cruise control, lane guidance and automated parallel parking. 
+Still human driver is required to operate the vehicle and 
+driver is fully responsible for all the actions.
+
+The second level is combined and automated functions \cite{transportpolicy}, for example function like 
+adaptive cruise control with lane centering, which keeps the vehicle in the lane 
+by following road marks and adapts the speed based on the car driving ahead. In 
+the second level drivers are responsible for monitoring the roadway and are 
+expected to start steering on demand. In level two driver can keep hands and 
+foots of from the steering equipments but are required to operate the vehicle in 
+varying conditions.
+
+Level three is a limited self driving \cite{transportpolicy}. It requires the driver to take controls 
+under certain conditions, but most of the time the vehicle can operate itself. 
+
+Level four, self driving vehicle under specific conditions. In this level 
+vehicle can operate under specified conditions \cite{transportpolicy}, for example drive from point A 
+to point B
+
+Level five is the last level of autonomous vehicle. In this last level vehicle 
+can operate on all conditions, no matter of weather, speed or road type. 
+\cite{transportpolicy} Also it is possible that in the final level vehicles 
+could have some sort of self awareness, for example finding best parking place 
+nearby or pick up different persons in the meanwhile. This way people could use 
+autonomous vehicles on demand.
 
 Most likely self operating vehicles gained much more attention in year 2010 when 
 Google announced its automated driving program. \cite{heavyvehicle} However vehicle automation 
@@ -130,6 +158,9 @@ sell level four vehicles within few years" \cite{transportpolicy} but it would
 require strict requirements from governments and probably global rules on 
 driving habits and traffic signs.   
 
+
+\section{Autonomous vehicle technology}
+
 In the future it is very likely that the vehicles doesn't only drive 
 automatically, but also communicate with each other. \cite{trafficmodels} 
 Communication between vehicles will be changing information, for example road 
@@ -137,6 +168,16 @@ conditions, weather and also fetching data from centralized servers. From
 centralized servers bots could distribute useful information to vehicles. 
 Imagine your car finding the nearest free parking spot while you are doing your 
 shoppings at shopping mall. 
+
+\begin{figure}[h]
+\ \newline
+\begin{center}
+\includegraphics[width=0.9\textwidth]{nonlineofsight.png}
+\caption{Non line of sight technology is about sharing information between vehicles in close. 
+\cite{connectedvehicle}}
+\label{non line of sight}
+\end{center}
+\end{figure}
 
 In addition to changing information between vehicles and retrieving centralized 
 data, \cite{trafficmodels} autonomous vehicles can contain hundreds of sensors. These sensors 
@@ -146,36 +187,51 @@ for example planning the computer what to do. For example sitting in traffic
 lights the car in front could inform your car that it is going to turn left, 
 which helps planning what step should be  taken next. 
 
-\section{Autonomous vehicle levels}
+\begin{figure}[h]
+\ \newline
+\begin{center}
+\includegraphics[width=0.9\textwidth]{vehicleinternals.png}
+\caption{Vehicle internal sensors. 
+\cite{connectedvehicle}}
+\label{sensors}
+\end{center}
+\end{figure}
 
-Autonomous vehicles can be compartmentalized in five levels \cite{transportpolicy} where first level of self 
-driving vehicle is automating single functions. This includes devices such as 
-cruise control, lane guidance and automated parallel parking. 
- Still human driver is required to operate the vehicle and 
-driver is fully responsible for all the actions.
+Autonomous vehicle sensors consist of for example laser range finder, which creates 3D-images 
+of objects that helps the car see hazards along the way. Laser range finder also calculates 
+how far an object is from the moving vehicle the same as sonar sensors work, how long it takes 
+for the laser beam to return from the object it bounced from. Laser can also travel long distances, 
+so it is possible to calculate distance from impressive 200 meters away.
 
-The second level is combined and automated functions \cite{transportpolicy}, for example function like 
-adaptive cruise control with lane centering, which keeps the vehicle in the lane 
-by following road marks and adapts the speed based on the car driving ahead. In 
-the second level drivers are responsible for monitoring the roadway and are 
-expected to start steering on demand. In level two driver can keep hands and 
-foots of from the steering equipments but are required to operate the vehicle in 
-varying conditions.
+Front and rear cameras help vehicle to see obstacles right in front or back of the vehicle. Cameras help on parking the vehicle, see pedestrians and other motorists close by. Geo-location sensor tracks vehicle position and works in harmony with the navigation and route system. 
 
-Level three is a limited self driving \cite{transportpolicy}. It requires the driver to take controls 
-under certain conditions, but most of the time the vehicle can operate itself. 
+Tires can have ultrasonic sensors as well. Ultrasonic sensors are implemented even in some of the current cars in the markets. Ultrasonic sensors in the tires helps the car to park automatically. Ultrasonic sensors will alert in case of collision. Inside the autonomous vehicle there will be a gyroscope which determines the car position. 
 
+\begin{figure}[h]
+\ \newline
+\begin{center}
+\includegraphics[width=0.9\textwidth]{process.png}
+\caption{Deliberation process: how an action is designed. 
+\cite{trafficmodels}}
+\label{vehicle automation flow}
+\end{center}
+\end{figure}
 
-Level four, self driving vehicle under specific conditions. In this level 
-vehicle can operate under specified conditions \cite{transportpolicy}, for example drive from point A 
-to point B
+In order for vehicle to drive autonomously it requires a lot of data, from sensors and servers. The deliberation process could be following as in the picture. Vehicle gets information from centralized servers, then makes assumptions on conditions and also takes into consideration the user interaction and desires. From the data collection vehicle calculates an optimal route, speed and velocity. As soon as the vehicle finishes processing of each individual step it executes them one by one.  
 
-Level five is the last level of autonomous vehicle. In this last level vehicle 
-can operate on all conditions, no matter of weather, speed or road type. 
-\cite{transportpolicy} Also it is possible that in the final level vehicles 
-could have some sort of self awareness, for example finding best parking place 
-nearby or pick up different persons in the meanwhile. This way people could use 
-autonomous vehicles on demand.
+Autonomous vehicles will be programmed to understand traffic signs and in the future real life road behavior as well. For the data sharing centralized data-centers must be built. Autonomous vehicle sensors (embedded systems and sensors) will share information between other vehicles. Vehicle first need to process the data and decide which is useful information. For example bad road condition could be useful information. This information is then sent with mobile data as 3G, 4G, WiFi or some other similar technology to a distributed server. From distributed server the data will be stored in a data center or cloud server. From the cloud servers this information is passed to other vehicles after program logic decides what information should be shared and for which cars.  
+
+As presented in the image below, infrastructure for autonomous vehicles could be the following, \cite{trafficmodels} Cars near by share information between, what actions they are going to take and notify others with some kind of Ad-Hoc technology. The overall conditions are shared with cellular data to centralized servers. From servers general information about weather and road conditions are sent back to the vehicles. 
+
+\begin{figure}[h]
+\ \newline
+\begin{center}
+\includegraphics[width=0.9\textwidth]{infra.png}
+\caption{Infrastructure for autonomous vehicles. 
+\cite{trafficmodels}}
+\label{infrastructure}
+\end{center}
+\end{figure}
 
 
 \section{Vehicle sharing}
